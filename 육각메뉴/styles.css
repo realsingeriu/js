@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Poppins|Source+Sans+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /*   box-sizing:border-box; */
+  font-family: 'Source Sans Pro', 'Poppins', sans-serif;
+}
+body {
+  background: #333;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container,
+.menu {
+  height: 140px;
+  width: 160px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.menu {
+  /*   z-index: -1; */
+  transform: scale(0.9);
+}
+
+.toggle {
+  height: 0;
+  width: 80px;
+  border-bottom: 70px solid #f9d230;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.toggle:before {
+  content: '';
+  height: 0;
+  width: 80px;
+  border-top: 70px solid #f9d230;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 70px;
+  left: -40px;
+}
+
+#add {
+  font-size: 100px;
+  color: #fff;
+  position: relative;
+  top: 20px;
+  right: 10px;
+  transition: 0.3s;
+}
+#add:hover {
+  color: #e8b547;
+}
+
+.item {
+  height: 0;
+  width: 80px;
+  border-bottom: 70px solid #fff;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 0;
+  transition: 0.4s;
+}
+
+.item:before {
+  content: '';
+  height: 0;
+  width: 80px;
+  border-top: 70px solid #fff;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 70px;
+  left: -40px;
+}
+
+a > .material-icons {
+  color: #d2d2d2;
+  font-size: 60px;
+  transition: 0.3s;
+}
+
+a > .material-icons:hover {
+  color: #f9d230;
+  transform: scale(1.2);
+}
+
+a {
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+
+.one {
+  transform: translateY(-160px);
+}
+.two {
+  transform: translate(140px, 80px);
+}
+.three {
+  transform: translate(140px, -80px);
+}
+.four {
+  transform: translateY(160px);
+}
+.five {
+  transform: translate(-140px, 80px);
+}
+.six {
+  transform: translate(-140px, -80px);
+}

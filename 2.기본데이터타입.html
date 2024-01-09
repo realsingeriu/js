@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>기본 데이터타입</title>
+  </head>
+  <body>
+    <script>
+      //문자열,숫자,불린
+      //숫자
+      console.log(typeof 1); //숫자 number
+      console.log(typeof '1'); //문자 string
+      //사칙연사 + - * /
+      // % 나누고 남은 수 , ** 제곱
+      // 숫자가 아닐경우 NaN
+
+      /*
+          여러줄 주석
+          문자열 타입 string : 한따옴표, 쌍따옴표, 벡틱따옴표 안에있으면 문자열
+      */
+      let str1 = '헬로우1'; //쌍따옴표
+      let str2 = '헬로우2'; //한따옴표
+      let str3 = `헬로우3`; //벡틱따옴표
+
+      /* 불린 타입 */
+      let check = true; //불린
+      console.log(typeof check);
+      let check2 = 4 < 1; //비교값이 참이면 참이 check2에 입력(true), 틀리면 false입력
+      console.log(check2); //참
+
+      // 널 null 값이 없다는 값
+      // undefined 변수를 선언하고 아무값도 안넣었을때
+      let a; //undefined
+      a = null; //값이 없음
+    </script>
+  </body>
+</html>
